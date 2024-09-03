@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(kame.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+
+h1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 10em;
+  position: absolute;
+  padding-top: 20%;
+  text-shadow: 0 0 8px blue;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 80px;
+}
+
+
+li {
+  list-style: none;
+  text-align: center;
+  height: 80px;
+  line-height: 3;
+  font-weight: bold;
+  width: 150px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px gray;
+  margin-left: 10px;
+}
+
+li:hover {
+  background-image: url(kame.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#spot {
+  margin-top: 20px;
+}
+
+#spot .tree {
+  background-image: url(mounten.jpg);
+  position: relative;
+  background-size: cover;
+  height: 320px;
+}
+
+.fixed-bg {
+  height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec-title1 {
+  text-align: center;
+  font-size: 10em;
+  color: white;
+  text-shadow: 0 0 8px blue;
+  animation: bounce 3s infinite;
+}
+
+.world {
+  max-width: 1240px;
+  margin: 50px auto 10px;
+}
+
+.sec-title2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+.fadein {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid .item-content {
+  padding: 30px;
+}
+
+.grid .item-cat {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.grid .item-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid .item-date {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+#location .location-img {
+  background-image: url(sumaho.jpg);
+  position: relative;
+  background-size: cover;
+  height: 450px;
+}
+
+#location h2 {
+  text-align: center;
+  font-size: 10em;
+  color: white;
+ text-shadow: 0 0 8px blue;
+  padding-top: 65px;
+}
+
+k-1 {
+  animation: bounce 3s infinite;
+}
+
+.item-map {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.item-info {
+  text-align: center;
+}
+
+.k-2 {
+  width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    animation: bounce 3s infinite;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+#contact {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  background: blue;
+}
+
+.form-item {
+  padding: 200px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px 0;
+  margin: 30px 0;
+  width: 100%;
+}
+
+textarea {
+  margin: 30px 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#contact button{
+  margin: 0 auto;
+  display: block;
+   padding: 10px 100px;
+   color: white;
+   font-weight: bold;
+   background: pink;
+}
+
+#contact button:hover{
+  background-position: 100%;
+}
+
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
