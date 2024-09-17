@@ -9,6 +9,7 @@ body {
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-size: 0.9rem;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 a {
@@ -24,23 +25,12 @@ header {
   object-fit: cover;
 }
 
-h1 {
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 10em;
-  position: absolute;
-  padding-top: 20%;
-  text-shadow: 0 0 8px blue;
-}
-
 ul {
-  display: flex;
+  display: inline-flex;
   justify-content: end;
   width: 100%;
   height: 80px;
 }
-
 
 li {
   list-style: none;
@@ -56,10 +46,50 @@ li {
 }
 
 li:hover {
-  background-image: url(kame.jpg);
+  background-image: url(earth.jpg);
   background-size: cover;
   background-position: center;
 }
+
+.sec-title {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 10em;
+  top: 20%;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.k-1 {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1.0, 1.0) translate(0%, 0%);
+  }
+
+  15% {
+    transform: scale(0.9, 0.9) translate(0%, 5%);
+  }
+
+  30% {
+    transform: scale(1.3, 0.8) translate(0%, 10%);
+  }
+
+  50% {
+    transform: scale(0.8, 1.3) translate(0%, -10%);
+  }
+
+  70% {
+    transform: scale(1.1, 0.9) translate(0%, 5%);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0) translate(0%, 0%);
+  }
+}
+
 
 #spot {
   margin-top: 20px;
@@ -77,14 +107,6 @@ li:hover {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-.sec-title1 {
-  text-align: center;
-  font-size: 10em;
-  color: white;
-  text-shadow: 0 0 8px blue;
-  animation: bounce 3s infinite;
 }
 
 .world {
@@ -111,6 +133,11 @@ li:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.grid .item {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px 4px #ccc;
+}
+
 .grid .item-content {
   padding: 30px;
 }
@@ -132,6 +159,7 @@ li:hover {
 
 #location .location-img {
   background-image: url(sumaho.jpg);
+  background-attachment: fixed;
   position: relative;
   background-size: cover;
   height: 450px;
@@ -141,12 +169,12 @@ li:hover {
   text-align: center;
   font-size: 10em;
   color: white;
- text-shadow: 0 0 8px blue;
+  text-shadow: 0 0 8px blue;
   padding-top: 65px;
 }
 
 k-1 {
-  animation: bounce 3s infinite;
+  transition: bounce 3s infinite;
 }
 
 .item-map {
@@ -160,23 +188,22 @@ k-1 {
 
 .k-2 {
   width: 300px;
-    padding: 10px;
-    border-radius: 30px;
-    animation: bounce 3s infinite;
-    margin: 0 auto;
-    background-color: aqua;
+  padding: 10px;
+  border-radius: 30px;
+  animation: bounce 3s infinite;
+  margin: 0 auto;
+  background-color: aqua;
 }
 
 #contact {
   font-size: 20px;
   font-weight: bold;
-  width: 100%;
   height: 100vh;
-  background: blue;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(22, 135, 237) 0%, rgb(210, 6, 152) 50%, rgb(210, 6, 152) 100%);
 }
 
 .form-item {
-  padding: 200px 0;
   width: 70%;
   margin: 0 auto;
 }
@@ -193,21 +220,21 @@ textarea {
   width: 100%;
 }
 
-#contact button{
+.form-item button {
   margin: 0 auto;
   display: block;
-   padding: 10px 100px;
-   color: white;
-   font-weight: bold;
-   background: pink;
+  padding: 10px 100px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgb(22, 135, 237) 0%, rgb(210, 6, 152) 50%, rgb(210, 6, 152) 100%);
+  background-size: 200% 100%;
 }
 
-#contact button:hover{
-  background-position: 100%;
+#footer p {
+  font-size: 0.5rem;
+  text-align: center;
 }
 
 #footer {
-  font-size: 0.5rem;
-  padding: 10px 0;
-  text-align: center;
+  height: 70px;
 }
